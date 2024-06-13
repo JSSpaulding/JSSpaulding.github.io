@@ -102,7 +102,10 @@
 
 
 
-<div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
+<div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
+    <div class="col-sm-1 mt-2 p-0 pr-1">
+      <h3 class="bibliography-year">2023</h3>
+    </div>
     <div class="col-sm-11 p-0">
       <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
   <div class="col-sm-1 p-0 abbr">
@@ -202,14 +205,11 @@
 
       <div>
         <p class="periodical font-italic">
-            Journal of Intelligence and Analysis. <strong>2023.</strong> 26(1).
+            Journal of Intelligence and Analysis. <strong>2023.</strong> 26(1), 7-24.
         </p>
       </div>
 
       
-      <div style="color: #FFC000;"><p class="periodical font-italic"><i class="fa fa-solid fa-star"></i> Outstanding Paper Award!</p></div>
-      
-    
       <div class="col p-0">
         
           <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#Spaulding-2023-rcrimeanalysis-abstract" role="button" aria-expanded="false" aria-controls="Spaulding-2023-rcrimeanalysis-abstract">Abstract</a>
@@ -252,71 +252,29 @@
   <div class="col-sm-1 p-0 abbr">
     
       
-        <a class="badge font-weight-bold danger-color-dark align-middle" style="width: 53px;" href="https://aclanthology.org/venues/acl/" target="_blank">
-          ACL
+        <a class="badge font-weight-bold danger-color-dark align-middle" style="width: 53px;" href="https://link.springer.com/journal/10109" target="_blank">
+          JGSY
         </a>
       
     
   </div>
   <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
     
-    <div id="Chen-2022-text_to_sql" class="col p-0">
-      <h5 class="title mb-0">Bridging the Generalization Gap in Text-to-SQL Parsing with Schema Expansion.</h5>
+    <div id="Spaulding-2023-rgeoprofile" class="col p-0">
+      <h5 class="title mb-0">An Open-Source Implementation of Geographic Profiling Methods for Serial Crime Analysis.</h5>
       <div class="author">
-        
-          
-          
-            
-              
-                
-                  <nobr><a href="http://www.chenz.umiacs.io/" target="_blank">Chen Zhao</a>,</nobr>
-                
-              
-            
-          
-        
-          
-          
-            
-              
-                
-                  <nobr><a href="https://ysu1989.github.io/" target="_blank">Yu Su</a>,</nobr>
-                
-              
-            
-          
-        
-          
-          
-            
-              
-                
-                  <nobr><a href="https://www.linkedin.com/in/adam-pauls-137054102" target="_blank">Adam Pauls</a>,</nobr>
-                
-              
-            
-          
-        
-          
-          
+                  
+                  <nobr><em>Jamie Spaulding</em>,</nobr>
             
               and
-              
-                <nobr><em>Emmanouil Antonios Platanios</em>.</nobr>
-              
-            
-          
+                
+                  <nobr><a href="https://forensics.wvu.edu/faculty-and-staff/faculty/keith-morris" target="_blank">Keith Morris</a>.</nobr>
         
       </div>
 
       <div>
         <p class="periodical font-italic">
-          
-            In Annual Meeting of the Association for Computational Linguistics (ACL)
-          
-          
-            2022.
-          
+            Journal of Geographical Systems. <strong>2023.</strong> 25, 567–586.
         </p>
       </div>
 
@@ -324,18 +282,9 @@
     
       <div class="col p-0">
         
-          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#Chen-2022-text_to_sql-abstract" role="button" aria-expanded="false" aria-controls="Chen-2022-text_to_sql-abstract">Abstract</a>
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#Spaulding-2023-rgeoprofile-abstract" role="button" aria-expanded="false" aria-controls="Spaulding-2023-rgeoprofile-abstract">Abstract</a>
         
-        
-        
-          <a class="badge grey waves-effect font-weight-light mr-1" href="/assets/pdf/chen_2022_text_to_sql/paper.pdf" target="_blank">PDF</a>
-        
-        
-        
-        
-        
-        
-          <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/microsoft/text-to-sql-schema-expansion-generalization" target="_blank">Code</a>
+          <a class="badge grey waves-effect font-weight-light mr-1" href="https://github.com/JSSpaulding/rgeoprofile" target="_blank">Github</a>
         
         
         <!-- 
@@ -352,9 +301,11 @@
     
       
       <div class="col mt-2 p-0">
-        <div id="Chen-2022-text_to_sql-abstract" class="collapse">
+        <div id="Spaulding-2023-rgeoprofile-abstract" class="collapse">
           <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-            Text-to-SQL parsers map natural language questions to programs that are executable over tables to generate answers, and are typically evaluated on large-scale datasets like Spider (Yu et al., 2018). We argue that existing benchmarks fail to capture a certain out-of-domain generalization problem that is of significant practical importance: matching domain specific phrases to composite operation over columns. To study this problem, we first propose a synthetic dataset along with a re-purposed train/test split of the Squall dataset (Shi et al., 2020) as new benchmarks to quantify domain generalization over column operations, and find existing state-of-the-art parsers struggle in these benchmarks. We propose to address this problem by incorporating prior domain knowledge by preprocessing table schemas, and design a method that consists of two components: schema expansion and schema pruning. This method can be easily applied to multiple existing base parsers, and we show that it significantly outperforms baseline parsers on this domain generalization problem, boosting the underlying parsers’ overall performance by up to 13.8% relative accuracy gain (5.1% absolute) on the new Squall data split.
+            The rgeoprofile R package was developed to implement functions for the analysis of serial crime incidents. Geographic profiling is an investigative technique that utilizes the spatial relationship of a connected series of crime incidents to determine or predict the most probable area of offender residence or anchor point. If successfully used as a decision support system, criminal geography can be used to help law enforcement agencies strategically target certain areas for inquiry or prioritize suspects through a narrowed search window. As an open-source platform, the rgeoprofile package contains several rapid reproducible models of spatial analysis using either centrographic or distance decay functions to predict the offender’s home base. An open-source approach results in transparent analyses with no-cost availability for agencies. Additionally, since both mathematical models and investigator heuristics have been shown to provide viable options for criminal geographic profiling, a software package, which integrates different solutions to the geographic profiling problem was needed. Finally, the article demonstrates the various geographic profiling methods in a case study of the Boston Strangler to illustrate the advantages of each approach. <br />
+
+            <br /><b>Keywords:</b> geographical profiling; police investigation; decision support systems; open source
           </div>
         </div>
       </div>
@@ -368,136 +319,32 @@
     
       
         <a class="badge font-weight-bold danger-color-dark align-middle" style="width: 53px;" href="https://aclanthology.org/venues/acl/" target="_blank">
-          ACL
+          SMS
         </a>
       
     
   </div>
   <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
     
-    <div id="Belyy-2022-k_best" class="col p-0">
-      <h5 class="title mb-0">Guided K-best Selection for Semantic Parsing Annotation.</h5>
+    <div id="Peterson-2023-mass_shooter" class="col p-0">
+      <h5 class="title mb-0">How Mass Public Shooters Use Social Media: Exploring Themes and Future Directions.</h5>
       <div class="author">
+              
+                  <nobr><a href="https://www.jillianpeterson.com/" target="_blank">Jillian Peterson</a>,</nobr>
+                  
+                  <nobr><a href="https://www.jamesdensley.com/" target="_blank">James Densley</a>,</nobr>
         
-          
-          
-            
-              
-                
-                  <nobr><a href="https://avbelyy.github.io/" target="_blank">Anton Belyy*</a>,</nobr>
-                
-              
-            
-          
-        
-          
-          
-            
-              
-                
-                  <nobr><a href="https://appleternity.github.io/chieh-yang/" target="_blank">Chieh-Yang Huang*</a>,</nobr>
-                
-              
-            
-          
-        
-          
-          
-            
-              
-                
-                  <nobr><a href="https://www.mit.edu/~jda/" target="_blank">Jacob Andreas</a>,</nobr>
-                
-              
-            
-          
-        
-          
-          
-            
-              
-                <nobr><em>Emmanouil Antonios Platanios</em>,</nobr>
-              
-            
-          
-        
-          
-          
-            
-              
-                
-                  <nobr><a href="https://samthomson.com/" target="_blank">Sam Thomson</a>,</nobr>
-                
-              
-            
-          
-        
-          
-          
-            
-              
-                
-                  <nobr><a href="https://rshin.github.io/" target="_blank">Richard Shin</a>,</nobr>
-                
-              
-            
-          
-        
-          
-          
-            
-              
-                
-                  <nobr><a href="https://sroy9.github.io/" target="_blank">Subhro Roy</a>,</nobr>
-                
-              
-            
-          
-        
-          
-          
-            
-              
-                
-                  <nobr><a href="https://www.linkedin.com/in/alex-nisnevich-514a5836" target="_blank">Aleksandr Nisnevich</a>,</nobr>
-                
-              
-            
-          
-        
-          
-          
-            
-              
-                
-                  <nobr><a href="https://www.linkedin.com/in/neocatalyst" target="_blank">Charles Chen</a>,</nobr>
-                
-              
-            
-          
-        
-          
-          
-            
+                  <nobr><em>Jamie Spaulding</em>,</nobr>
+             
               and
-              
-                
-                  <nobr><a href="https://www.cs.jhu.edu/~vandurme/" target="_blank">Benjamin Van Durme</a>.</nobr>
-                
-              
-            
-          
+        
+                  <nobr><a href="https://www.linkedin.com/in/stasia-higgins" target="_blank">Stasia Higgins</a>,</nobr>
         
       </div>
 
       <div>
         <p class="periodical font-italic">
-          
-            In Annual Meeting of the Association for Computational Linguistics (ACL)
-          
-          
-            2022.
-          
+            Social Media + Society <strong>2023.</strong> (9)1.
         </p>
       </div>
 
@@ -505,17 +352,9 @@
     
       <div class="col p-0">
         
-          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#Belyy-2022-k_best-abstract" role="button" aria-expanded="false" aria-controls="Belyy-2022-k_best-abstract">Abstract</a>
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#Peterson-2023-mass_shooter-abstract" role="button" aria-expanded="false" aria-controls="Peterson-2023-mass_shooter-abstract">Abstract</a>
         
-        
-        
-          <a class="badge grey waves-effect font-weight-light mr-1" href="/assets/pdf/belyy_2022_k_best/paper.pdf" target="_blank">PDF</a>
-        
-        
-        
-        
-        
-        
+          <a class="badge grey waves-effect font-weight-light mr-1" href="https://doi.org/10.1177/20563051231155101" target="_blank">Article Link</a>
         
         <!-- 
           <div
@@ -531,9 +370,11 @@
     
       
       <div class="col mt-2 p-0">
-        <div id="Belyy-2022-k_best-abstract" class="collapse">
+        <div id="Peterson-2023-mass_shooter-abstract" class="collapse">
           <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-            Collecting data for conversational semantic parsing is a time-consuming and demanding process. In this paper we consider, given an incomplete dataset with only a small amount of data, how to build an AI-powered human-in-the-loop process to enable efficient data collection. A guided K-best selection process is proposed, which (i) generates a set of possible valid candidates; (ii) allows users to quickly traverse the set and filter incorrect parses; and (iii) asks users to select the correct parse, with minimal modification when necessary. We investigate how to best support users in efficiently traversing the candidate set and locating the correct parse, in terms of speed and accuracy. In our user study, consisting of five annotators labeling 300 instances each, we find that combining keyword searching, where keywords can be used to query relevant candidates, and keyword suggestion, where representative keywords are automatically generated, enables fast and accurate annotation.
+            Collecting data for conversational semantic parsing is a time-consuming and demanding process. In this paper we consider, given an incomplete dataset with only a small amount of data, how to build an AI-powered human-in-the-loop process to enable efficient data collection. A guided K-best selection process is proposed, which (i) generates a set of possible valid candidates; (ii) allows users to quickly traverse the set and filter incorrect parses; and (iii) asks users to select the correct parse, with minimal modification when necessary. We investigate how to best support users in efficiently traversing the candidate set and locating the correct parse, in terms of speed and accuracy. In our user study, consisting of five annotators labeling 300 instances each, we find that combining keyword searching, where keywords can be used to query relevant candidates, and keyword suggestion, where representative keywords are automatically generated, enables fast and accurate annotation. <br />
+
+            <br /><b>Keywords:</b> mass shooting; violence; social media; mental health
           </div>
         </div>
       </div>
@@ -543,12 +384,12 @@
 </div>
 </li></ol>
     </div>
-    <div class="col-sm-1 align-self-end mt-2 p-0 pr-1">
-      <h3 class="bibliography-year">2022</h3>
-    </div>
   </div>
 
-<div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
+<div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
+    <div class="col-sm-1 mt-2 p-0 pr-1">
+      <h3 class="bibliography-year">2022</h3>
+    </div>
     <div class="col-sm-11 p-0">
       <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
   <div class="col-sm-1 p-0 abbr">
